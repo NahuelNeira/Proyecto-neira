@@ -1,0 +1,78 @@
+body{
+    background: url(../imagenes/messi.jpg);
+    background-size: 100%;
+}
+h1{
+    color: #1F618D;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 450%;
+    text-align: center;
+    font-family: mifuente;
+}
+
+.titulo{
+    font-family: 'cinzel', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 450%;
+    text-align: center;
+    color: #1f618d;
+}
+ul li{
+    list-style: none;
+    color: #0b5383f6;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 200%;
+    font-style: oblique;
+}
+li{
+    padding: 5%;
+}
+h2{
+    color: #0b5383f6;
+    font-family: 'cinzel', serif;
+
+}
+
+.grid-imagenes{
+    display: grid;
+    grid-template-rows: repeat(3, 50%);
+    gap: 25px;
+}
+.grid-imagenes{
+    text-align: center;
+}
+.camiseta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.hazaña{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+.paris{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+h2{
+    grid-column: 1 / 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@font-face{
+    font-family: mifuente;
+    src: url(../fonts/dark_college/DarkCollege.otf);
+}
+
+@media(max-width:620px){
+    .grid-imagenes{
+        grid-template-columns: 1, 100% ;
+    }
+}
+
